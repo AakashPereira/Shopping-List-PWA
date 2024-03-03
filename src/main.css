@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #73bfb8;
+    background: #027bdd;
     text-align: center;
     font-family: 'Manrope', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     user-select: none;
@@ -27,18 +27,28 @@ input[type=text] {
     border-radius: 8px;
     border: 0;
     padding: 10px 20px;
-    background: #fed9b7;
+    background: #fdb1fa;
     text-align: inherit;
     font-family: inherit;
 }
 
+input::placeholder {
+    color: #484646;
+}
+
 button {
     border-radius: 8px;
-    background: #40916c;
+    background: #002ea5;
     border: 0;
     padding: 10px 20px;
     color: #FFF;
     font-family: inherit;
+}
+
+button:hover {
+    background: #03216f;
+    cursor: pointer;
+    transition: background 0.75s;
 }
 
 ul {
@@ -58,6 +68,6 @@ ul li {
 
 ul li:hover {
     cursor: pointer;
-    background:#fed9b7;
+    background: #fdb1fa;
     transition: background 0.75s;
 }
