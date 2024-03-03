@@ -34,8 +34,11 @@ function appendToList(item) {
     span.setAttribute("tabindex", "0")
     span.setAttribute("aria-label", `Delete ${itemValue} item`)
     span.addEventListener("dblclick", function() {
-        let locationInDB = ref(database, `shoppingList/${itemID}`)
-        remove(locationInDB)
+        if(confirm("Are you sure you want to remove this item?") == true) {
+            let locationInDB = ref(database, `shoppingList/${itemID}`)
+            remove(locationInDB)
+        }
+        
     })
     span.textContent = itemValue
     li.append(span)
@@ -43,8 +46,12 @@ function appendToList(item) {
 }
 
 addItemBtn.addEventListener("click", function() {
-    push(shoppingInDB, itemInputEl.value)
-    clearInputField()
+    if((itemInputEl.value).length > 0) {
+        push(shoppingInDB, itemInputEl.value)
+        clearInputField()
+    } else {
+        alert("Make sure to enter a value")
+    }
 })
 
 function clearInputField() {
