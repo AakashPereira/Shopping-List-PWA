@@ -7,4 +7,4 @@ A simple progressive web app acting as a shopping list for a family. Utilises Go
  - Double-click items to delete them from the shopping list
  - Utilises Google Firebase to save and show items for all users
 
-🔗 [Try Shopping List PWA]([https://aakashpereira.github.io/Shopping-List-PWA/)
+🔗 [Try Shopping List PWA](https://aakashpereira.github.io/Shopping-List-PWA/)
