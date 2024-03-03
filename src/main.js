@@ -46,7 +46,7 @@ function appendToList(item) {
 }
 
 addItemBtn.addEventListener("click", function() {
-    if((itemInputEl.value).length > 0) {
+    if((itemInputEl.value.trim()).length > 0) {
         push(shoppingInDB, itemInputEl.value)
         clearInputField()
     } else {
