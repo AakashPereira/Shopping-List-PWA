@@ -1,0 +1,62 @@
+@font-face {
+    src: url("Manrope-Regular.ttf");
+    font-family: 'Manrope';
+}
+
+body {
+    background: #73bfb8;
+    text-align: center;
+    font-family: 'Manrope', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#logo {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 0;
+    padding: 10px 20px;
+    background: #fed9b7;
+    text-align: inherit;
+    font-family: inherit;
+}
+
+button {
+    border-radius: 8px;
+    background: #40916c;
+    border: 0;
+    padding: 10px 20px;
+    color: #FFF;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    flex-grow: 1;
+    background: #FFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+ul li:hover {
+    cursor: pointer;
+    background:#fed9b7;
+    transition: background 0.75s;
+}
