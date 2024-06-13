@@ -19,8 +19,12 @@ addItemBtn.addEventListener("click", function() {
 })
 
 function addItemToList(value) {
-    push(itemsInDB, value)
-    handleAfterEntry()
+    if(value.length > 0) {
+        push(itemsInDB, value)
+        handleAfterEntry()
+    } else {
+        alert("Enter a shopping item to add to the list")
+    }
 }
 
 function handleAfterEntry() {
