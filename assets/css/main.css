@@ -37,6 +37,7 @@ button {
 
 .btn {
     background: #ADD8E6;
+    color: #26262c;
     border-radius: 8px;
     padding: 15px;
     font-family: inherit;
@@ -70,6 +71,7 @@ button {
 
 .item button {
     font-size: 1em;
+    color: inherit;
 }
 
 .item:hover {
