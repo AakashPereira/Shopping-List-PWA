@@ -16,8 +16,20 @@
         <div class="container">
             <img src="assets/shopping-logo.gif" alt="" class="main-logo">
             <h1>Shopping List</h1>
-            <input type="text" placeholder="What would you like to buy?" id="item-input">
-            <button id="add-item-btn" class="btn">Add Item</button>
+            <form id="shopping-form">
+                <div class="form-field">
+                    <input type="text" placeholder="What would you like to buy?" id="item-input">
+                </div>
+                <div class="form-field">
+                    <select id="buyer-input">
+                        <option>Aakash</option>
+                        <option>Adrian</option>
+                        <option>Eraisha</option>
+                        <option>Pruthuvi</option>
+                    </select>
+                </div>
+                <button id="add-item-btn" class="btn">Add Item</button>
+            </form>
             <ul class="items-container" id="items-container">
             </ul>
             <footer>Not a Pereira? Get out of here! Illustration by <a href="https://icons8.com/illustrations/author/kP9rc8JiBCcz">Irene M. Ray</a></footer>

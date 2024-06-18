@@ -19,20 +19,29 @@ body {
     margin: 0 auto;
 }
 
+.form-field {
+    margin: 10px 0;
+}
+
 input[type=text] {
     background: snow;
-    color: #26262c;
     border: 0;
+}
+
+input[type=text], select {
+    color: #26262c;
     border-radius: 8px;
     padding: 15px;
     font-family: inherit;
-    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
     border: 0;
     background: 0;
     cursor: pointer;
+    width: 100%
 }
 
 .btn {
@@ -67,16 +76,46 @@ button {
     border-radius: 8px;
     flex-grow: 1;
     cursor: pointer;
+    position: relative;
 }
 
 .item button {
     font-size: 1em;
     color: inherit;
+    z-index: 2;
+    position: inherit;
 }
 
 .item:hover {
     background: #ADD8E6;
     transition: background 0.75s;
+}
+
+.buyer {
+    font-size: 0.75em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 4px;
+    z-index: 1;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.buyer-adrian {
+    background: #C5EBAA;
+}
+
+.buyer-aakash {
+    background: #9BB0C1;
+}
+
+.buyer-eraisha {
+    background: #FCDC94;
+}
+
+.buyer-pruthuvi {
+    background: #E8C5E5;
 }
 
 footer {
