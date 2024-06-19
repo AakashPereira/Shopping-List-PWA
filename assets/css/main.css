@@ -35,7 +35,18 @@ input[type=text], select {
     font-family: inherit;
     width: 100%;
     box-sizing: border-box;
+    
+}
+
+select {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("/assets/down-arrow.png") #FFF;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-size: 20px;
 }
 
 button {
