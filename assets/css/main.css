@@ -42,11 +42,11 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("/assets/down-arrow.png") #FFF;
+    background: url("../down-arrow.png") #FFF;
     background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 50%;
+    background-position: center right 10px;
     background-size: 20px;
+
 }
 
 button {
