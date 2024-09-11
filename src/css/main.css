@@ -1,0 +1,135 @@
+body {
+    background: #0d1b2a;
+    color: #e0e1dd;
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 250px;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.combobox, .btn, input[type=text] {
+    font-family: inherit;
+}
+
+.combobox, ul li, .btn, input[type=text] {
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.item {
+    position: relative;
+    padding: 15px 30px;
+    background: #e0e1dd;
+    color: #0d1b2a;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.item button {
+    background: 0;
+    border: 0;
+    position: inherit;
+    z-index: 1;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buyer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3px 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 0.75em;
+    font-weight: bold;
+    z-index: 0;
+}
+
+.buyer-aakash {
+    background: #0466c8;
+    color: #e0e1dd;
+}
+
+.buyer-adrian {
+    background: #ff5400;
+}
+
+.buyer-eraisha {
+    background: #3dccc7;
+}
+
+.buyer-pruthuvi {
+    background: #ecbcfd;
+}
+
+.btn {
+    background: #ffb703;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    border-radius: 5px;
+    border: solid 1px #ffb703;
+    padding: 15px;
+}
+
+footer p {
+    margin: 2px 0;
+}
+
+footer a {
+    color: #e0e1dd;
+    font-weight: bold;
+}
+
+hr {
+    border-bottom: solid 1px #ffb706;
+    width: 100%;
+}
+
+#status-msg {
+    background: #f8d7da;
+    color: #bb2436;
+    padding: 7px 14px;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}

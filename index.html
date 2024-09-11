@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopping List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+        <link rel="stylesheet" href="src/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-16x16.png">
+        <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.ico?">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="src/img/logo.gif" alt="" class="logo">
+                <h1>Shopping List</h1>
+            </header>
+    
+            <main>
+                <form id="add-form">
+                    <input type="text" id="item-input" placeholder="Enter the shopping item..." aria-describedby="status-msg">
+                    <select class="combobox" id="owner-combo" aria-describedby="status-msg">
+                        <option disabled selected value=""> -- select an option -- </option>
+                        <option>Aakash</option>
+                        <option>Adrian</option>
+                        <option>Eraisha</option>
+                        <option>Pruthuvi</option>
+                    </select>
+                    <button class="btn" id="add-btn" type="submit">Add Item</button>
+                    <p id="status-msg" class="hidden" role="status"></p>
+                </form>
+    
+                <hr aria-hidden="true">
+
+                <div>
+                    <ul id="shopping-list">
+                    </ul>
+                </div>
+            </main>
+
+            <footer>
+                <p>Not a Pereira? Get out of here!</p>
+                <p>Illustration by <a href="https://icons8.com/illustrations/author/7WmtYU90j36d">Fruzka</a></p>
+            </footer>
+
+        </div>
+        <script src="src/js/index.js" type="module"></script>
+    </body>
+</html>
