@@ -1,4 +1,4 @@
-![Shopping List PWA](assets/github-header.png)
+![Shopping List PWA](src/img/github-header.png)
 
 A simple shopping list PWA utilising Google Firebase for a database. Features include:
 
