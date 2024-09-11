@@ -29,8 +29,19 @@ form {
     gap: 10px;
 }
 
+.combobox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../img/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 95%;
+    background-size: 20px;
+}
+
 .combobox, .btn, input[type=text] {
     font-family: inherit;
+    color: #0d1b2a;
 }
 
 .combobox, ul li, .btn, input[type=text] {
@@ -52,7 +63,7 @@ ul {
 .item {
     position: relative;
     padding: 15px 30px;
-    background: #e0e1dd;
+    background: #FFF;
     color: #0d1b2a;
     flex-grow: 1;
     cursor: pointer;
