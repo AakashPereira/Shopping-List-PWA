@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopping List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/src/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/src/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Shopping List</h1>
+                <img src="/src/img/shop.gif" alt="" class="logo">
+                <input type="text" id="item-input" placeholder="Enter shopping item (Bread, milk, etc.)">
+                <select id="user-input">
+                    <option>Aakash</option>
+                    <option>Adrian</option>
+                    <option>Eraisha</option>
+                    <option>Pruthuvi</option>
+                </select>
+                <button id="add-item-btn">Add Item</button>
+                <p id="error-el" role="status"></p>
+            </div>
+            <div class="main">
+                <ul id="shopping-items-container"></ul>
+            </div>
+            <footer>
+                <p>Shopping icon from <a href="https://lordicon.com/icons/wired/outline/526-paper-bag-vegetables" target="_blank">Lordicon</a></p>
+            </footer>
+        </div>
+        <script src="/src/index.js" type="module"></script>
+    </body>
+</html>
