@@ -28,10 +28,12 @@ addItemBtn.addEventListener("click", function() {
 
 function validateItem(itemValue, userInput) {
     if (itemValue.length === 0) {
-        errorEl.textContent = "Enter a valid item"
+        errorEl.innerHTML = `<img src="src/img/error.png" alt="Error"> Enter a valid item`
+        errorEl.classList.add("error-el-display")
         return false
     } else {
         errorEl.textContent = ""
+        errorEl.classList.remove("error-el-display")
         return true
     }
 }
