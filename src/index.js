@@ -9,6 +9,9 @@ const shoppingItemsContainer = document.getElementById("shopping-items-container
 
 const errorEl = document.getElementById("error-el")
 
+const banSugarBtn = document.getElementById("ban-sugar-btn")
+const banSugarEl = document.getElementById("ban-sugar-el")
+
 const firebaseConfig = {
     databaseURL: "https://shopping-list-5aef4-default-rtdb.europe-west1.firebasedatabase.app/"
 }
@@ -82,4 +85,17 @@ function removeItem(itemID, itemName) {
     if (window.confirm(`Are you sure you want to delete ${itemName}?`)) {
         remove(ref(database, `shoppingList/${itemID}`))
     }
+}
+
+banSugarBtn.addEventListener("click", function() {
+    setSugarKey()
+})
+
+function setSugarKey() {
+    localStorage.setItem("banSugar", "true")
+}
+
+if (localStorage.getItem("banSugar") === "true") {
+    banSugarEl.innerHTML = `<img src="src/img/warning.png" alt="Error"> REMEMBER! SUGAR BAN IS ACTIVE`
+    banSugarEl.classList.add("error-el-display")
 }

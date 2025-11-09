@@ -66,7 +66,7 @@ body {
     gap: 5px
 }
 
-#error-el img {
+#error-el img, #ban-sugar-el img {
     height: 1.4em;
 }
 
@@ -126,4 +126,19 @@ body {
 
 footer a {
     color: #FFF;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+#ban-sugar-el {
+    background: #99131d;
+    font-weight: bold;
 }
