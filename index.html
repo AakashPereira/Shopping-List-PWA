@@ -20,26 +20,28 @@
             </header>
             <main>
                 <div class="form">
-                    <label for="item-input">What item do you need to buy?</label>
-                    <input type="text" id="item-input" placeholder="Enter shopping item (Bread, milk, etc.)">
-                    <label for="name-input">Who needs this item?</label>
-                    <select id="name-input">
-                        <option>Aakash</option>
-                        <option>Adrian</option>
-                        <option>Eraisha</option>
-                        <option>Pruthuvi</option>
-                    </select>
-                    <label for="shop-input">What shop is it from?</label>
-                    <select id="shop-input">
-                        <option>Any</option>
-                        <option>Aldi</option>
-                        <option>Home Bargains</option>
-                        <option>Lidl</option>
-                        <option>Morrisons</option>
-                        <option>Sainsburys</option>
-                        <option>Other</option>
-                    </select>
-                    <button id="add-btn" class="add-btn">Add Item</button>
+                    <form id="add-item-form">
+                        <label for="item-input">What item do you need to buy?</label>
+                        <input type="text" id="item-input" name="item-input" placeholder="Enter shopping item (Bread, milk, etc.)" required />
+                        <label for="name-input">Who needs this item?</label>
+                        <select id="name-input" name="name-input">
+                            <option>Aakash</option>
+                            <option>Adrian</option>
+                            <option>Eraisha</option>
+                            <option>Pruthuvi</option>
+                        </select>
+                        <label for="shop-input">What shop is it from?</label>
+                        <select id="shop-input" name="shop-input">
+                            <option>Any</option>
+                            <option>Aldi</option>
+                            <option>Home Bargains</option>
+                            <option>Lidl</option>
+                            <option>Morrisons</option>
+                            <option>Sainsburys</option>
+                            <option>Other</option>
+                        </select>
+                        <button id="add-btn" class="add-btn" type="submit">Add Item</button>
+                    </form>
                 </div>
                 <ul class="items-container" id="items-container">
                 </ul>

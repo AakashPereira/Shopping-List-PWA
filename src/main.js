@@ -9,6 +9,7 @@ const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
 const referenceInDB = ref(database, "shopping-list")
 
+const addItemForm = document.getElementById("add-item-form")
 const inputEl = document.getElementById("item-input")
 const nameEl = document.getElementById("name-input")
 const shopEl = document.getElementById("shop-input")
@@ -16,11 +17,14 @@ const addBtn = document.getElementById("add-btn")
 
 const itemsContainer = document.getElementById("items-container")
 
-addBtn.addEventListener("click", function() {
+addItemForm.addEventListener("submit", function(e) {
+    e.preventDefault()
+    const formData = new FormData(addItemForm)
+
     const item = {
-        item: inputEl.value,
-        name: nameEl.value,
-        shop: shopEl.value
+        item: formData.get("item-input"),
+        name: formData.get("name-input"),
+        shop: formData.get("shop-input")
     }
     push(referenceInDB, item)
     inputEl.value = ""
